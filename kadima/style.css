@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 p, .textwidget {
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size:1.1em;
     line-height: 1.42857143;
 }
 .head-contact-info {
@@ -203,7 +203,9 @@ p, .textwidget {
     width: 100%;
 }
 .carousel-caption {
-    top: 20%;
+    top: 15% !important;
+    width: 40%;
+    left: 10%;
 }
 .carousel-control .fa .fa-chevron-left {
     position: absolute;
@@ -223,12 +225,13 @@ p, .textwidget {
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     line-height: 1.4em;
-    background: rgba(0, 0, 0, 0.6);
+    /*background: rgba(0, 0, 0, 0.6);*/
     -webkit-animation-delay: .3s;
     -moz-animation-delay: .3s;
     -ms-animation-delay: .3s;
     -o-animation-delay: .3s;
     animation-delay: .3s;
+    text-align: left;
 }
 .carousel-text .kadima_blog_read_btn {
     font-size: 25px;
@@ -244,7 +247,7 @@ p, .textwidget {
 }
 .carousel-list li {
     color: #fff;
-    font-size: 17px;
+    font-size: 1.2em;
     margin-bottom: 10px;
     overflow: hidden;
     font-weight: 600;
@@ -261,6 +264,7 @@ p, .textwidget {
     -ms-animation-delay: .3s;
     -o-animation-delay: .3s;
     animation-delay: .3s;
+    text-align: left;
 }
 .carousel-list li:nth-child(2) {
     -webkit-animation-delay: .5s;

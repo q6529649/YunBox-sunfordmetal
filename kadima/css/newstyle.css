@@ -17,6 +17,7 @@ input[type="button"]{
 h1,h2,h3,h4,h5,h6{
     padding:0 0;
     margin:0 0;
+    font-size: 2.5em;
 }
 p{
     padding:0 0;
@@ -59,7 +60,6 @@ body{
 }
 .top-menu ul li{
     display:inline-block;
-    padding-right: 35px;
 
 }
 .copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
@@ -70,7 +70,7 @@ body{
     text-transform: uppercase;
     margin: 0 0.8em;
     font-weight: 700;
-    color: #e4000d;
+    color: #fff;
     font-family: 'Arial';
 }
 .top-menu ul li a: {
@@ -437,6 +437,7 @@ a.button:hover {
     max-width: 250px;
     margin: 0 auto;
     color: #333;
+    text-align: left;
 
 }
 
@@ -673,7 +674,7 @@ i.skype {
 
 
 .top-menu ul li a:hover {
-    color: #fff !important;
+    color: #e4000d !important;
 }
 
 .col-md-12 h3{
@@ -682,7 +683,7 @@ i.skype {
     font-size: 2.5em;
     padding: 0.5em 0 0.3em;
     font-family: 'Montserrat-Regular';
-    font-size: 22px;
+    font-size: 1.6em;
     font-weight: bold;
     font-family: 'Arial';
 }

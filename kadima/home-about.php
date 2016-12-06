@@ -7,7 +7,7 @@
 								<video src="http://cdn.yunclever.com/job_client/website/sunford/about-sunford.mp4" controls="controls" width="100%" height="100%" preload="preload"></video></div>
 						<div class="col-md-6 contact-grid1">
 								<h1  style="color: #e4010c;margin-top: 20px;padding-bottom:20px;margin-bottom: 0.5em; font-weight: bold;"><?php echo esc_attr($wl_theme_options['about_title']); ?></h1>
-								<div class="icon2" style="color: #fff;">
+								<div class="icon2" style="color: #fff;padding-right: 50px;">
 										<p style="color: #000;font-weight: bold;">
 										<?php echo esc_attr($wl_theme_options['about_description']); ?>
 										</p>
