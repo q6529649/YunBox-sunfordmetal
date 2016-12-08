@@ -48,7 +48,7 @@
 /** slider css ***/
 
 .carousel-list li {
-    background: rgba(49, 162, 221, 0.8);
+   /* background: rgba(49, 162, 221, 0.8);*/
 }
 
 /** service  section css ***/
@@ -292,13 +292,13 @@
     color: #31A3DD;
 }
 .kadima_sidebar_widget {
-    border-left: 3px solid #31A3DD;
-    border-right: 3px solid #31A3DD;
-    border-bottom: 3px solid #31A3DD;
+    border-left: 3px solid #333;
+    border-right: 3px solid #333;
+    border-bottom: 3px solid #333;
     background-color: #ffffff;
 }
 .kadima_sidebar_widget_title {
-    background: #31A3DD;
+    background: #333333;
 }
 .kadima_sidebar_link p a:hover, .kadima_sidebar_widget ul li a:hover {
     color: #31A3DD;
@@ -478,7 +478,7 @@
 /*** breadcum style css **/
 
 .breadcrumb li a {
-    color: #31A3DD !important;
+    color: #000 !important;
 }
 
 /** progress bar or nav button css */
@@ -487,7 +487,7 @@
     background-color: #31A3DD !important;
 }
 .btn-search {
-    background: #31A3DD !important;
+    background: #333 !important;
 }
 .nav-pills> li> a {
     border: 3px solid #31A3DD !important;
@@ -507,8 +507,12 @@
     background-image: linear-gradient(to bottom, #31A3DD 50%, #31A3DD 50%) !important;
     background-color: #31A3DD;
 }
+.navbar-toggle {
+    background-color: #31A3DD !important;
+    border: 1px solid #31A3DD !important;
+}
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-    background-color: #049CFD;
+    background-color: #31A3DD !important;
 }
 .kadima_blockquote_section blockquote {
     border-left: 5px solid #31A3DD;
@@ -762,12 +766,13 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-collapse {
     max-height: 340px;
     padding-right: 15px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 35px;
+
     overflow-x: visible;
     -webkit-overflow-scrolling: touch;
     border-top: 0px solid transparent;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    padding-left: 120px;
+
 }
 .navbar-toggle {
     position: relative;
@@ -792,6 +797,9 @@ h1, h2, h3, h4, h5, h6 {
     background-image: none;
     border: 1px solid #049CFD;
     border-radius: 4px;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #049CFD;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #fff;
@@ -847,6 +855,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .kadima_header_breadcrum_title h1 {
     color: #777777;
+    font-size: 25px;
 }
 .breadcrumb {
     font-size: 17px;
@@ -858,6 +867,8 @@ h1, h2, h3, h4, h5, h6 {
     -moz-border-radius: 0;
     border-radius: 0;
     list-style: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .breadcrumb li {
     display: inline-block;
