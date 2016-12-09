@@ -25,13 +25,13 @@
 											<div class="col-md-3" >
 											<ul style=";padding: 0;">
 													<li style="display: inline-block;padding: 0.1em 0;"><i class="indicate"></i></li>
-													<li style="display: inline-block;padding: 0.1em 0;"><p class="label1">Info@sunfordmetal.com</p></li>
+													<li style="display: inline-block;padding: 0.1em 0;"><p class="label1">funford@sunfordmetal.com</p></li>
 											</ul>
 											</div>
 											<div class="col-md-3" >
 											<ul style=";padding: 0;" style=";padding: 0;margin-top: 1.5em;">
 													<li style="display: inline-block;padding: 0.1em 0;"><i class="phone"></i></li>
-													<li style="display: inline-block;padding: 0.1em 0;"><p class="label1">+86 13666079207&nbsp&nbsp&nbsp+86 18906002206</p></li>
+													<li style="display: inline-block;padding: 0.1em 0;"><p class="label1">+86-592-5165692</p></li>
 											</ul>
 											</div>
 											<div class="col-md-3" >

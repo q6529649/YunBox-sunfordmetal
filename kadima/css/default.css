@@ -31,7 +31,7 @@
     background-color: #31A3DD;
 }
 .dropdown-menu {
-    background-color: #fff;
+    background-color: rgba(49, 162, 221, 0.9);
 }
 
 /** headings titles css ***/
@@ -671,7 +671,6 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     text-transform: uppercase;
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
-	border-top: 1px solid #fff;
 }
 .dropdown-menu> li> a {
     display: block;
@@ -690,7 +689,7 @@ h1, h2, h3, h4, h5, h6 {
 .dropdown-menu> li> a:hover, .dropdown-menu> li> a:focus {
     color: #000;
     text-decoration: none;
-    background-color: #fff !important;
+    background-color: #ffffff;
     padding: 7px 20px 7px 22px;
     font-family: 'Open Sans', 'Arimo', Arial, Helvetica, sans-serif;
 }
@@ -767,7 +766,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-collapse {
     max-height: 340px;
     padding-right: 15px;
-    margin-top: 24px;
+    margin-top: 35px;
 
     overflow-x: visible;
     -webkit-overflow-scrolling: touch;
