@@ -13,7 +13,7 @@
             <div class="carousel-caption">
 			<?php if($wl_theme_options['slide_title_'.$i]!='') {  ?>
 			<div class="carousel-text">
-            <h1 class="animated bounceInRight"><?php echo esc_attr($wl_theme_options['slide_title_'.$i]); ?></h1>
+            
 			<?php
 			 if($wl_theme_options['slide_desc_'.$i]!='') {  ?>
 			  <ul class="list-unstyled carousel-list">
