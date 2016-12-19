@@ -37,7 +37,7 @@
 								</a>
 	            </div>
 	            <div class="top-menu">
-	                <span class="menu"> </span>
+	                
 									<div class="navbar-header">
 										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
 											<span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
@@ -49,7 +49,7 @@
 									<div id="menu" class="collapse navbar-collapse ">
 									<?php wp_nav_menu( array(
 											'theme_location' => 'primary',
-											'menu_class' => 'cl-effect-5',
+											'menu_class' => 'nav cl-effect-5',
 											'fallback_cb' => 'kadima_fallback_page_menu',
 											'walker' => new kadima_nav_walker(),
 											)
@@ -65,15 +65,10 @@
 	                </ul-->
 	            </div>
 	            <!--script-nav-->
-	            <script>
-	                $("span.menu").click(function(){
-	                    $(".top-menu ul").slideToggle("slow" , function(){
-	                    });
-	                });
-	            </script>
+	           
 	            <!-- start search-->
 	            <div class="search-box">
-	                <div id="sb-search" class="sb-search">
+	                <div id="sb-search" class="sb-search sb-search-open">
 	                    <form>
 	                        <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
 	                        <input class="sb-search-submit" type="submit" value="">
@@ -87,7 +82,7 @@
 	                new UISearch( document.getElementById( 'sb-search' ) );
 	            </script>
 	            <!-- //search-scripts -->
-	            <div class="clearfix"></div>
+	           
 	        </div>
 	    </div>
 	</div>
