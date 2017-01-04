@@ -62,29 +62,5 @@
 <?php { echo esc_attr($wl_theme_options['custom_css']); } ?>
 </style>
 <?php wp_footer(); ?>
-<script type="text/javascript" src="//x.translateth.is/translate-this.js"></script>
-<script type="text/javascript">
-function setCookie(name,value) 
-{ 
-    var Days = 30; 
-    var exp = new Date(); 
-    exp.setTime(exp.getTime() + Days*24*60*60*1000); 
-    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString(); 
-} 
-setCookie('tt-lang','zh-CN');
-TranslateThis({
-	GA : true,
-	noBtn : false,
-    btnImg : 'http://x.translateth.is/tt-btn2.png',
-    btnHeight : 18,
-    btnWidth : 180,    
-    noImg : false,
-    imgHeight : 12,
-    imgWidth : 18,
-    bgImage : 'http://x.translateth.is/tt-sprite3.png',
-	maxLength : 1000,
-    reparse : false
-});
-</script>
 </body>
 </html>
