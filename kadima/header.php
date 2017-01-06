@@ -15,10 +15,22 @@
 	<?php if($wl_theme_options['upload_image_favicon']!=''){ ?>
 	<link rel="shortcut icon" href="<?php  echo esc_url($wl_theme_options['upload_image_favicon']); ?>" />
 	<?php } ?>
-	<link rel="dns-prefetch" href="//cdn.yunclever.com">
-	<link rel="dns-prefetch" href="//cdn.bootcss.com">
-	<link rel="dns-prefetch" href="//use.typekit.net">
-	<link rel="dns-prefetch" href="//static.addtoany.com">
+	<?php
+		if (is_home()) {
+			echo '<meta http-equiv="x-dns-prefetch-control" content="on" />
+			<link rel="dns-prefetch" href="//cdn.yunclever.com">
+			<link rel="dns-prefetch" href="//cdn.bootcss.com">
+			<link rel="dns-prefetch" href="//static.addtoany.com">';
+		} elseif (isset($_COOKIE['yc_visit_cookie'])) {
+			echo '';
+		}
+		else {
+			echo '<meta http-equiv="x-dns-prefetch-control" content="on" />
+			<link rel="dns-prefetch" href="//cdn.yunclever.com">
+			<link rel="dns-prefetch" href="//cdn.bootcss.com">
+			<link rel="dns-prefetch" href="//static.addtoany.com">';
+		}
+	?>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -55,18 +67,7 @@
 											)
 											);	?>
 									</div>
-	                <!--ul>
-	                    <nav class="cl-effect-5">
-	                        <li><a href="#" class="active"><span data-hover="Home">home</span></a></li>
-	                        <li><a href="#"><span data-hover="gallery">PRODUCTS & EQUIPMENT</span></a></li>
-	                        <li><a href="#"><span data-hover="blog">GUESTBOOK</span></a></li>
-	                        <li><a href="#"><span data-hover="services">CONTACTS US</span></a></li>
-	                    </nav>
-	                </ul-->
 	            </div>
-	            <!--script-nav-->
-	           
-	            <!-- start search-->
 	            <div class="search-box">
 	                <div id="sb-search" class="sb-search sb-search-open">
 	                    <form>
@@ -75,14 +76,7 @@
 	                        <span class="sb-icon-search"> </span>
 	                    </form>
 	                </div>
-	            </div>
-	            <!-- search-scripts -->
-	           
-	            <script>
-	                new UISearch( document.getElementById( 'sb-search' ) );
-	            </script>
-	            <!-- //search-scripts -->
-	           
+	            </div>	           
 	        </div>
 	    </div>
 	</div>
