@@ -192,7 +192,7 @@ nav a {
     width:14%;
 }
 .sb-search.sb-search-open .sb-icon-search,.no-js .sb-search .sb-icon-search {
-    background: #c0c0c0 url('../images/img-sprite.png') no-repeat 0px 1px;
+    background: #c0c0c0;
     color: #fff;
     z-index: 11;
 }
