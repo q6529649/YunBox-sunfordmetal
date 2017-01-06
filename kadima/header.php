@@ -32,6 +32,23 @@
 		}
 	?>
 	<?php wp_head(); ?>
+	<script type="text/javascript">
+	  var visitor_id;
+	  var _paq = _paq || [];
+	  _paq.push(["setCookieDomain", "*.sunfordmetal.com"]);
+	  _paq.push(["setDomains", ["*.sunfordmetal.com"]]);
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+		var u="//dc.yunclever.com/piwik/";
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', '9']);
+		_paq.push([ function() { visitor_id = this.getVisitorId(); }]);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	</script>
+
 </head>
 <body <?php body_class(); ?>>
 <div>
