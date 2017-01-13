@@ -87,13 +87,15 @@
 	            </div>
 	            <div class="search-box">
 	                <div id="sb-search" class="sb-search sb-search-open">
-	                    <form>
-	                        <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+	                    <form role="search" method="get" class="navbar-form navbar-left" action="<?php echo home_url( '/' ); ?>">
+	                        <!--input class="sb-search-input" type="search" name="search" id="search"-->							
+							<label class="screen-reader-text" for="s">Search for:</label>
+							<input class="sb-search-input" type="text" name="s" id="s" value="<?php the_search_query(); ?>" placeholder="Enter your search term..." />
 	                        <input class="sb-search-submit" type="submit" value="">
 	                        <span class="sb-icon-search"> </span>
 	                    </form>
 	                </div>
-	            </div>	           
+	            </div>			
 	        </div>
 	    </div>
 	</div>
