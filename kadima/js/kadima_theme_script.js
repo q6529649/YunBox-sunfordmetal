@@ -10,7 +10,7 @@ jQuery(function(){
 	/*----------------------------------------------------*/
 /*	Scroll To Top Section
 /*----------------------------------------------------*/
-jQuery(document).ready(function () {
+jQuery(document).ready(function ($) {
 	jQuery(window).scroll(function () {
 		if (jQuery(this).scrollTop() > 100) {
 			jQuery('.kadima_scrollup').fadeIn();
@@ -24,6 +24,43 @@ jQuery(document).ready(function () {
 		}, 600);
 		return false;
 	});
+		   
+	jQuery('#formpostmail').submit(function() {
+		var name = document.getElementById('yourname').value;
+		var mail = document.getElementById('youremail').value;
+		var msg = document.getElementById('yourmessage').value;		
+		if(name!='' && mail!='' && msg!=''){
+			jQuery.ajax({
+				type: 'POST',
+				url: 'http://api.yunclever.com/v2/Public/ybox/?',
+				data:{
+					service: 'Mail.sendMail',
+					title: '您有新的询盘信息',
+					mailto: 'info@sunfordmetal.com',
+					content: '客户名称：' + name + '<br/>' + '客户邮箱：' +　mail + '<br/>' + '客户留言：' + msg,
+					ybform: true
+				},		
+				datatype: "json",
+				beforeSend:function(){
+					
+				},          
+				success:function(data){
+					alert('发送成功！');
+					document.getElementById('yourname').value = '';
+					document.getElementById('youremail').value = '';
+					document.getElementById('yourmessage').value = '';					
+				},
+				complete: function(XMLHttpRequest, textStatus){
+				   //alert(XMLHttpRequest.responseText);
+				   //alert(textStatus);
+				},
+				error: function(){
+				}         
+			});
+		}
+		return false;
+	});
+
 });
 
 jQuery.browser = {};
