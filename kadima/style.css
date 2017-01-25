@@ -2975,7 +2975,7 @@ table td {
 	position: relative;
 	overflow: hidden;
 }
-.search_y{position: absolute; left: 50px; top:140px; z-index: 999; opacity: 0}
+.search_y{position: absolute; left: 50px; top:40%; z-index: 999; opacity: 0}
 .biankuang{
 	width: 5px;
 	height: 5px;
@@ -2999,6 +2999,6 @@ table td {
 }
 .biankuang_4{
 	width:0px;
-	top: 340px;
+	top: 98.5%;
 	border-bottom: 5px solid #ce1e03;
 }
