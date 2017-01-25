@@ -21,7 +21,6 @@
             wp_enqueue_script('waypoints', '//cdn.bootcss.com/waypoints/4.0.1/jquery.waypoints.min.js','','',true);
             wp_enqueue_script('scroll', get_template_directory_uri() .'/js/scroll.js','','',true);
             wp_enqueue_script('responsiveslides', get_template_directory_uri() .'/js/responsiveslides.min.js');
-            wp_enqueue_script('uisearch', get_template_directory_uri() .'/js/uisearch.js');
             wp_enqueue_script('classie', get_template_directory_uri() .'/js/classie.js');
         
     		}

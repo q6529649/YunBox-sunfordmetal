@@ -6,7 +6,38 @@
 	define('WL_TEMPLATE_DIR', get_template_directory());
 	define('WL_TEMPLATE_DIR_CORE' , WL_TEMPLATE_DIR . '/core');
 	require( WL_TEMPLATE_DIR_CORE . '/menu/menu_nav_walker.php' );
-	require( WL_TEMPLATE_DIR_CORE . '/scripts/css_js.php' );
+	function kadima_scripts() {
+        wp_enqueue_style('bootstrap', '//cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css');
+        wp_enqueue_style('default', get_template_directory_uri() . '/css/default.css');
+        wp_enqueue_style('animations', '//cdn.bootcss.com/animations/2.1/css/animations.min.css');
+        //wp_enqueue_style('theme-animtae', get_template_directory_uri() . '/css/theme-animtae.css');
+        wp_enqueue_style('font-awesome', '//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css');
+        wp_enqueue_style('video-js-css', '//cdn.bootcss.com/video.js/5.14.1/video-js.min.css');
+        wp_enqueue_style('font-family', get_template_directory_uri() . '/css/font-family.css');
+        wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
+	wp_enqueue_style('newstyle', get_template_directory_uri() . '/css/newstyle.css');
+        wp_enqueue_style('linearicons', get_template_directory_uri() . '/css/linearicons.css');
+        // Js
+        wp_enqueue_script('bootstrap-js', '//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'));
+        wp_enqueue_script('video-js', '//cdn.bootcss.com/video.js/5.14.1/video.min.js', array('jquery'));
+        wp_enqueue_script('logjs', get_template_directory_uri() . '/js/log.min.js', array('jquery'));
+        //wp_enqueue_script('webim', get_template_directory_uri() .'/web-im/webim.config.js', array('jquery'));
+        //wp_enqueue_script('strophe', get_template_directory_uri() .'/web-im/strophe-1.2.8.min.js', array('jquery'));
+        //wp_enqueue_script('websdk', get_template_directory_uri() .'/web-im/websdk-1.4.5.js', array('jquery'));
+        wp_enqueue_script('menu', get_template_directory_uri() .'/js/menu.js', array('jquery'));
+        wp_enqueue_script('kadima-theme-script', get_template_directory_uri() .'/js/kadima_theme_script.js', array('jquery'));
+        if(is_front_page()){
+            wp_enqueue_script('jquery.carouFredSel', '//cdn.bootcss.com/jquery.caroufredsel/6.2.1/jquery.carouFredSel.packed.js');
+            wp_enqueue_script('photobox-js', '//cdn.bootcss.com/photobox/1.9.9/photobox/jquery.photobox.min.js');
+            wp_enqueue_style('photobox', '//cdn.bootcss.com/photobox/1.9.9/photobox/photobox.min.css');
+            wp_enqueue_script('kadima-footer-script', get_template_directory_uri() .'/js/kadima-footer-script.js','','',true);
+            wp_enqueue_script('waypoints', '//cdn.bootcss.com/waypoints/4.0.1/jquery.waypoints.min.js','','',true);
+            wp_enqueue_script('scroll', get_template_directory_uri() .'/js/scroll.js','','',true);
+	    wp_enqueue_script('responsiveslides', get_template_directory_uri() .'/js/responsiveslides.min.js');
+            wp_enqueue_script('classie', get_template_directory_uri() .'/js/classie.js');
+        }
+    }
+	add_action('wp_enqueue_scripts', 'kadima_scripts');
 	//require( WL_TEMPLATE_DIR_CORE . '/comment-function.php' );
 	require(dirname(__FILE__).'/customizer.php');
 
@@ -505,24 +536,28 @@
 		}
 	}
 	function customWp_admin_style_scripts() {
+		wp_enqueue_style( 'font-awesome-css', '//cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css');
 		wp_enqueue_style('font-family', get_template_directory_uri() . '/css/font-family.css');
 		wp_enqueue_style( 'admin-css', get_template_directory_uri() . '/css/admin.css');
+		//wp_enqueue_script('webim', get_template_directory_uri() .'/web-im/webim.config.js', array('jquery'));
+		//wp_enqueue_script('strophe', get_template_directory_uri() .'/web-im/strophe-1.2.8.min.js', array('jquery'));
+		//wp_enqueue_script('websdk', get_template_directory_uri() .'/web-im/websdk-1.4.5.js', array('jquery'));
 		if ( $_GET['page'] == 'yc-plugin-dashboard/yc-plugin-dashboard.php') {
 			wp_enqueue_style('materialize-css', '//cdn.bootcss.com/materialize/0.97.8/css/materialize.min.css');
 			wp_enqueue_style('woocommerce-dashboard',  get_template_directory_uri() . '/../../plugins/woocommerce/assets/css/dashboard.css');
 			wp_enqueue_style('animate-css', '//cdn.bootcss.com/animate.css/3.5.2/animate.min.css');
-			wp_enqueue_script('jquery3', '//cdn.bootcss.com/jquery/3.1.1/jquery.min.js');
-	        wp_enqueue_script('materialize-js', '//cdn.bootcss.com/materialize/0.97.8/js/materialize.min.js', array('jquery3'));
-	        wp_enqueue_script('echarts-js', '//cdn.bootcss.com/echarts/3.3.1/echarts.min.js', array('jquery3'));
+			wp_enqueue_script('jquery2', '//cdn.bootcss.com/jquery/2.2.4/jquery.min.js');
+	        wp_enqueue_script('materialize-js', '//cdn.bootcss.com/materialize/0.97.8/js/materialize.min.js', array('jquery2'));
+	        wp_enqueue_script('echarts-js', '//cdn.bootcss.com/echarts/3.3.1/echarts.min.js', array('jquery2'));
+			wp_enqueue_style( 'layim-style', '//cdn.yunclever.com/static/layui/css/layui.css' );
+			wp_enqueue_script('layim', '//cdn.yunclever.com/static/layui/layui.js', array('jquery2'));
+			wp_enqueue_script('onlinesupport', get_template_directory_uri() .'/js/onlinesupport.js', array('jquery2'));
 		}
-		if ( $_GET['page'] == 'yc-plugin-dashboard/yc-plugin-setting.php') {
+		if ( $_GET['page'] == 'yc-plugin-dashboard/yc-setting.php') {
 			wp_enqueue_style('layui-css', '//cdn.yunclever.com/static/layui/css/layui.css');
-			wp_enqueue_script('jquery3', '//cdn.bootcss.com/jquery/3.1.1/jquery.min.js');
-	        wp_enqueue_script('layui-js', '//cdn.yunclever.com/static/layui/layui.js', array('jquery3'));
+			wp_enqueue_script('jquery2', '//cdn.bootcss.com/jquery/2.2.4/jquery.min.js');
+	        wp_enqueue_script('layui-js', '//cdn.yunclever.com/static/layui/layui.js', array('jquery2'));
 		}
-		//wp_enqueue_script('webim', get_template_directory_uri() .'/web-im/webim.config.js', array('jquery'));
-		//wp_enqueue_script('strophe', get_template_directory_uri() .'/web-im/strophe-1.2.8.min.js', array('jquery'));
-		//wp_enqueue_script('websdk', get_template_directory_uri() .'/web-im/websdk-1.4.5.js', array('jquery'));
 	}
 	function customWp_plugin_check_missing() {
 		$plugins = array(

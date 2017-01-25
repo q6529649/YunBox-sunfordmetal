@@ -83,6 +83,7 @@
 											'walker' => new kadima_nav_walker(),
 											)
 											);	?>
+											<div id="google_translate_element"></div>
 									</div>
 	            </div>
 	            <div class="search-box">
