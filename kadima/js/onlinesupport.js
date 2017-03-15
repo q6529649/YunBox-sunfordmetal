@@ -13,7 +13,7 @@ var olsupport = '<div class="olsupport_side">' +
 '	</ul>' +
 '</div>';
 document.write(olsupport);
-
+/*
 var blnUid = false;
 layui.use('layim', function(layim){
 	var socket = new WebSocket("ws://api.yunclever.com:8282");
@@ -64,3 +64,4 @@ layui.use('layim', function(layim){
 		}
 	};
 });
+*/

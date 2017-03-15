@@ -79,7 +79,6 @@
 									<?php wp_nav_menu( array(
 											'theme_location' => 'primary',
 											'menu_class' => 'nav cl-effect-5',
-											'fallback_cb' => 'kadima_fallback_page_menu',
 											'walker' => new kadima_nav_walker(),
 											)
 											);	?>
