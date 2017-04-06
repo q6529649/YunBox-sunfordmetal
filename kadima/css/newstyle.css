@@ -992,6 +992,7 @@ i.skype {
     }
     .sb-search.sb-search-open, .no-js .sb-search {
         width: 29%;
+		display:none;
     }
     .box_2 {
         width: 33.3%;
@@ -1014,6 +1015,7 @@ i.skype {
 
     .sb-search.sb-search-open, .no-js .sb-search {
         width: 33%;
+		display:none;
     }
     .sb-search {
         right: -3px;
@@ -1060,6 +1062,7 @@ i.skype {
         .sb-search.sb-search-open, .no-js .sb-search {
             width: 43%;
 			margin-top:25px;
+			display:none;
         }
         .sb-search {
             right: 0px;

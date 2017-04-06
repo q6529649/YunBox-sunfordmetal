@@ -296,14 +296,16 @@ body {
     #wp-admin-bar-site-name img {
         display: none;
     }
+	
 }
-@media screen and (min-width: 783px) {
+@media screen and (min-width: 736px) {
     html.wp-toolbar {
         padding-top: 50px;
     }
     #wpadminbar .quicklinks>ul>li>a {
         padding: 9px 10px !important;
     }
+	
 }
 @media screen and (min-width: 783px) {
     .folded #adminmenu, .folded #adminmenu li.menu-top, .folded #adminmenuback, .folded #adminmenuwrap {

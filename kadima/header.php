@@ -65,25 +65,24 @@
 									} ?>
 								</a>
 	            </div>
-	            <div class="top-menu">
-	                
-									<div class="navbar-header">
-										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
-											<span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-											<span class="icon-bar"></span>
-										</button>
-									</div>
-									<div id="menu" class="collapse navbar-collapse ">
-									<?php wp_nav_menu( array(
-											'theme_location' => 'primary',
-											'menu_class' => 'nav cl-effect-5',
-											'walker' => new kadima_nav_walker(),
-											)
-											);	?>
-											<div id="google_translate_element"></div>
-									</div>
+	            <div id="google_translate_element" class="top-menu" >
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+							<span class="sr-only"><?php _e('Toggle navigation','kadima');?></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div id="menu" class="collapse navbar-collapse ">
+					<?php wp_nav_menu( array(
+							'theme_location' => 'primary',
+							'menu_class' => 'nav cl-effect-5',
+							'walker' => new kadima_nav_walker(),
+							)
+							);	?>
+							<div id="google_translate_element"></div>
+					</div>
 	            </div>
 	            <div class="search-box">
 	                <div id="sb-search" class="sb-search sb-search-open">

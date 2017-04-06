@@ -2804,6 +2804,9 @@ table td {
         padding-bottom: 5px;
         width: 100%;
     }
+	.navbar-collapse{
+		padding:15px;
+	}
     .logo {
         text-align: center;
         padding-top: 15px;
